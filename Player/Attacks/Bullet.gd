@@ -15,7 +15,8 @@ func _physics_process(delta):
 	#collission
 	if collision:
 		if collision.collider.is_in_group("enemy"):
-			collision.collider.queue_free()
+			if collision.collider.has_method("hit"):
+				collision.collider.hit()
 			queue_free()
 	
 	#timeout
