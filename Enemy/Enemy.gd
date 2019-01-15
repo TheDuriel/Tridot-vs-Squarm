@@ -9,8 +9,10 @@ func _physics_process(delta):
 		queue_free()
 
 func hit():
-	for i in range(2):
-		var b = n.instance()
-		get_parent().add_child(n)
-		n.position = position
+	var b = n.instance()
+	get_parent().add_child(b)
+	b.position = position
+	var a = n.instance()
+	get_parent().add_child(a)
+	a.position = position + Vector2(10, 10)
 	queue_free()

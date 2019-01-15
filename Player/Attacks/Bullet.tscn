@@ -18,7 +18,7 @@ collision/safe_margin = 0.08
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "collision" ]
 speed = 10
-lifetime = 300
+lifetime = 600
 
 [node name="Polygon2D" type="Polygon2D" parent="." index="0"]
 

@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 export(int) var speed = 10
-export(int) var lifetime = 300
+export(int) var lifetime = 600
 
 
 func _physics_process(delta):

@@ -6,7 +6,7 @@ export(int) var move_speed = 200
 export(int) var strafe_speed = 150
 
 	#ability settings
-export(float) var primary_cooldown = 0.2
+export(float) var primary_cooldown = 0.04
 var primary_ready = true
 
 var velocity = Vector2()
@@ -23,7 +23,7 @@ func _physics_process(delta):
 
 
 func get_movement_input():
-
+	
 	look_at(get_global_mouse_position())
 	rotation -= PI / 2
 

@@ -85,7 +85,7 @@ script = ExtResource( 1 )
 _sections_unfolded = [ "Collision" ]
 move_speed = 200
 strafe_speed = 150
-primary_cooldown = 0.2
+primary_cooldown = 0.04
 
 [node name="BodyCollision" type="CollisionPolygon2D" parent="." index="0"]
 
